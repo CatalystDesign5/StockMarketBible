@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CANDLESTICK TRADING AND INVESTING BIBLE</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Image Details -->
+            <div class="col-md-6 fixed-image">
+                <!-- Bootstrap Carousel for Main Image -->
+                <div id="mainCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/img/Screenshot (28).png" class="d-block w-100" alt="Stock Market Book">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/CANDLESTICK TRADING AND INVESTING BIBLE.jpg" class="d-block w-100"
+                                alt="Thumbnail 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/Screenshot (29).png" class="d-block w-100" alt="Thumbnail 2">
+                        </div>
+                    </div>
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="thumbnail-container mt-3 d-flex justify-content-center">
+                    <img src="./assets/img/CANDLESTICK TRADING AND INVESTING BIBLE.jpg" class="img-thumbnail me-2"
+                        alt="Thumbnail 1" onclick="changeImage(1)">
+                    <img src="./assets/img/Screenshot (28).png" class="img-thumbnail me-2" alt="Thumbnail 2"
+                        onclick="changeImage(2)">
+                    <img src="./assets/img/Screenshot (29).png" class="img-thumbnail" alt="Thumbnail 3"
+                        onclick="changeImage(0)">
+                </div>
+            </div>
+
+            <!-- Product Details Section -->
+            <div class="col-md-6 scrollable-content">
+                <h2 class="product-title">CANDLESTICK TRADING AND INVESTING BIBLE</h2>
+                <p class="price">
+
+                    <span class="text-danger">Rs. 99.00 (Inclusive of GST)</span>
+                </p>
+                <div class="quantity mb-3">
+
+                </div>
+                <button id="payNowButton" class="btn btn-danger btn-lg w-100 mb-3">Buy Now</button>
+
+                <p>Unlock the secrets of the stock market with our ultimate chart pattern guide! Whether you're a
+                    beginner or a pro, this book is your key to mastering the art of trading. Learn proven strategies,
+                    spot high-profit opportunities, and take control of your financial future—all in one easy-to-follow
+                    guide. Don’t miss out on the chance to transform your trading game. Your path to financial success
+                    starts here!</p>
+
+                <!-- About This Item Section -->
+                <h3 class="about-title">About this item</h3>
+                <ul class="about-list">
+                    <li><strong>Ultimate Trading Companion</strong>: This comprehensive guide is your ultimate resource
+                        for mastering stock market chart patterns. Designed for both beginners and experienced traders,
+                        it offers clear, step-by-step instructions to help you navigate the complexities of the stock
+                        market.</li>
+                    <li><strong>Proven Profit Strategies</strong>: Gain access to tried-and-true trading strategies that
+                        have helped thousands of traders identify and capitalize on high-profit opportunities. Learn how
+                        to spot market trends early and make well-informed decisions to maximize your gains.</li>
+                    <li><strong>Easy-to-Understand Explanations</strong>: We know that technical analysis can be
+                        daunting, so we've broken down complex concepts into easy-to-follow explanations. Our guide is
+                        filled with real-life examples, visuals, and tips to make learning engaging and effective.</li>
+                    <li><strong>Turn Market Insights into Action</strong>: With detailed illustrations of every major
+                        chart pattern, you’ll know exactly what to look for in the market and when to act. Our book
+                        teaches you how to translate insights into actionable steps, allowing you to take control of
+                        your trades like a pro.</li>
+                    <li><strong>Achieve Financial Freedom</strong>: Whether you're looking to build long-term wealth or
+                        make short-term gains, our chart pattern book is your roadmap to financial independence. Start
+                        your journey toward a more secure and prosperous future today!</li>
+                    <li><strong>Built for Success</strong>: Developed by trading experts with years of experience, this
+                        guide is crafted to elevate your trading skills and boost your confidence in making profitable
+                        trades. It’s not just a book; it’s your personal guide to success in the stock market.</li>
+                </ul>
+            </div>
+            <!-- <div class="modal fade payment-modal" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <h5 class="modal-title text-center mb-3" id="paymentModalLabel">Pay With UPI QR</h5>
+                        <div class="text-center">
+                            <img src="../Insta_Project/assets/img/WhatsApp Image 2024-10-14 at 13.47.21_d0b2f6bf.jpg"
+                                class="qr-image" alt="QR Code">
+                            <p>Scan the QR using any UPI app on your phone.</p>
+                        </div>
+                        <div class="payment-details">
+                            <div>
+                                <button class="btn btn-outline-primary btn-sm">Card</button>
+                                <button class="btn btn-outline-primary btn-sm">UPI / QR</button>
+                                <button class="btn btn-outline-primary btn-sm">Netbanking</button>
+                                <button class="btn btn-outline-primary btn-sm">Wallet</button>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button class="btn btn-primary w-100" id="payNowButton">Pay Now - ₹99</button>
+                        </div>
+                        <p class="timer text-center mt-3">This page will timeout in <span id="timer">10:00
+                                minutes</span></p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="fixed-footer">
+                <a href="#" onclick="showModal('terms')">Terms and Conditions</a> |
+                <a href="#" onclick="showModal('privacy')">Privacy Policy</a> |
+                <a href="#" onclick="showModal('refund')">Refund & Cancellation Policy</a> |
+                <a href="#" onclick="showModal('contact')">Contact Us</a>
+            </div>
+            <!-- Terms and Conditions Modal -->
+            <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Terms and Conditions content goes here -->
+                            <p>For the purposes of these Terms and Conditions, the terms "we," "us," and "our" refer to
+                                CatalystDesign, which is owned by Mohit, with its registered and operational office
+                                located at Tower 48, Flat No 601, Emaar Palm Hills, Sector 77, Manesar, Gurgaon,
+                                Haryana, 122004. The terms "you," “your,” "user," and “visitor” refer to any individual
+                                or entity accessing our website and/or agreeing to purchase from us.</p>
+                            <p>By using our website and/or making a purchase from us, you consent to the following Terms
+                                and Conditions:</p>
+                            <p>1. Any unauthorized use of the information we provide may result in a claim for damages
+                                and/or may constitute a criminal offense.</p>
+                            <p>2. This website features material owned or licensed by us, including, but not limited to,
+                                its design, layout, appearance, and graphics. Reproduction is strictly prohibited except
+                                as specified in the copyright notice, which is an integral part of these Terms and
+                                Conditions.</p>
+                            <p>3. You acknowledge that any information or materials on this website may include
+                                inaccuracies or errors. We expressly disclaim liability for any such inaccuracies or
+                                errors to the maximum extent allowed by law.</p>
+                            <p>4. Using any information or materials available on our website and/or product pages is
+                                entirely at your own risk. It is your responsibility to ensure that any products,
+                                services, or information obtained through our website and/or product pages meet your
+                                specific requirements.</p>
+                            <p>5. The content on this website is subject to change at any time without prior notice.</p>
+                            <p>6. We do not offer any warranties or guarantees regarding the accuracy, timeliness,
+                                performance, completeness, or suitability of the information and materials provided on
+                                this website for any specific purpose.</p>
+                            <p>7. Occasionally, our website may contain links to external websites. These links are
+                                offered solely for your convenience to provide additional information.</p>
+                            <p>8. Any disputes arising from your use of our website and/or any purchases made will be
+                                governed by the jurisdiction and laws of India.</p>
+                            <p>9. You may not establish a link to our website from another website or document without
+                                obtaining prior written permission from CatalystDesign.</p>
+                            <p>10. We shall not be liable for any loss or damage arising directly or indirectly from a
+                                transaction being declined due to the cardholder exceeding the mutually agreed preset
+                                limit with our acquiring bank.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Privacy Policy Modal -->
+            <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Privacy Policy content goes here -->
+                            <p>At <b>CatalystDesign</b>, we are committed to protecting your privacy. This policy
+                                outlines how we handle personal information when you purchase our PDF guide.</p>
+                            <p><b>Information Collection</b> We do not require any personal information to make a
+                                purchase. You may choose to provide your email address for transaction receipts, but
+                                this is optional.</p>
+                            <p><b>Payment Processing</b> All payments are processed through Razorpay, a secure
+                                third-party service. We do not store any payment information.</p>
+                            <p><b>Use of Cookies</b> We may use cookies to enhance your browsing experience. You can
+                                manage your cookie preferences through your browser settings.</p>
+                            <p><b>Data Security</b> We take appropriate security measures to protect your information
+                                during the transaction process.</p>
+                            <p><b>Links to Other Websites</b> Websites Our website may contain links to other sites. We
+                                are not responsible for the privacy practices of these external sites.</p>
+                            <p><b>Changes to this Policy</b> We may update our Privacy Policy occasionally. Any changes
+                                will be posted on this page.</p>
+                            <p><b>Contact Us</b>Contact Us If you have any questions or concerns about our Privacy
+                                Policy , you can reach out to us from contact us section.</p>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Refund & Cancellation Policy Modal -->
+            <div class="modal fade" id="refundModal" tabindex="-1" aria-labelledby="refundModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="refundModalLabel">Refund & Cancellation Policy</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Refund & Cancellation Policy content goes here -->
+                            <p>Effective Date: October , 2024</p>
+                            <p>At CatalystDesign, we strive to provide high-quality digital products. Please read our
+                                Refund and Cancellation Policy carefully before making a purchase.</p>
+                            <p><b>1. No Refunds</b></p>
+                            <p>All purchases made on our website, including digital products such as PDFs, are final.
+                                Once the payment is processed and the product is delivered, we do not offer refunds or
+                                exchanges for any reason. This policy is in place due to the nature of digital goods.
+                            </p>
+                            <p><b>2. Cancellation Policy</b></p>
+                            <p>
+                                <li>Since the purchased product is delivered immediately after payment, you will not be
+                                    able to cancel your order once the transaction is completed.</li>
+                                <li>If you encounter any issues during the payment process or with the product itself,
+                                    please contact us at <b>ankituniversity927@gmail.com</b> within 48 hours of your
+                                    purchase for assistance.</li>
+                            </p>
+                            <p><b>3. Product Issues</b></p>
+                            <p>If you experience any technical issues with the digital product, please reach out to us,
+                                and we will do our best to assist you. While we cannot offer refunds, we are committed
+                                to ensuring that you can access the product you purchased.</p>
+                            <p><b>4. Contact Information</b></p>
+                            <p>For any inquiries regarding our Refund and Cancellation Policy, please contact us at:</p>
+                            <p>
+                                <li>Email: ankituniversity927@gmail.com</li>
+                                <li>Phone: 8447244839</li>
+                                <li>Address: Tower 48, Flat No 601, Emaar Palm Hills, Sector 77, Manesar, Gurgaon,
+                                    Haryana, 122004.</li>
+                            </p>
+                            <p>By completing your purchase, you agree to this Refund and Cancellation Policy.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us Modal -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contact Us content goes here -->
+                            <p>We’re here to help! If you have any questions or concerns regarding your purchase or our
+                                services, please feel free to reach out to us through any of the following methods:</p>
+                            <p>
+                                <li><b>Email:</b></li>
+                            </p>
+                            <p>ankituniversity927@gmail.com</p>
+                            <p>We aim to respond to all inquiries within 24 hours.</p>
+                            <p>
+                                <li><b>Phone:</b></li>
+                            </p>
+                            <p>+91 8447244839</p>
+                            <p>Our customer service team is available Monday to Friday, from 9:00 AM to 6:00 PM IST.</p>
+                            <p>
+                                <li><b>Address:</b></li>
+                            </p>
+                            <p>CatalystDesign</p>
+                            <p>Tower 48, Flat No 601,</p>
+                            <p>Emaar Palm Hills,</p>
+                            <p>Sector 77,</p>
+                            <p>Manesar, Gurgaon,</p>
+                            <p>Haryana, 122004, India</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="paymentModalLabel">Enter Your Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Form fields for customer details -->
+                            <form id="paymentForm">
+                                <div class="mb-3">
+                                    <label for="firstname" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstname"
+                                        placeholder="Enter your first name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="text" class="form-control" id="phone"
+                                        placeholder="Enter your phone number" required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="submitPayment">Proceed to Payment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <script src="https://checkout.payu.in/merchant/postservice.php?form=2"></script>
+        <script>
+            // Show the modal when "Buy Now" is clicked
+            document.getElementById('payNowButton').addEventListener('click', function () {
+                var paymentModal = new bootstrap.Modal(document.getElementById('paymentModal'));
+                paymentModal.show();
+            });
+
+            // Generate hash and submit form when "Proceed to Payment" is clicked
+            document.getElementById('submitPayment').addEventListener('click', async function () {
+                var firstname = document.getElementById('firstname').value;
+                var email = document.getElementById('email').value;
+                var phone = document.getElementById('phone').value;
+
+                // Validate form fields
+                if (!firstname || !email || !phone) {
+                    alert("Please fill all the fields.");
+                    return;
+                }
+
+                // Generate a unique txnid
+                var txnid = 'TXN' + new Date().getTime() + Math.floor(Math.random() * 1000);
+
+                // Payment configuration data
+                var payUConfig = {
+                    // Replace with your actual PayU Merchant Key
+                    "txnid": txnid,
+                    "amount": "10",  // Example amount in subunits (99 INR)
+                    "productinfo": "CANDLESTICK TRADING AND INVESTING BIBLE",
+                    "firstname": firstname,
+                    "email": email,
+                    "phone": phone,
+
+                };
+
+                // Call Firebase function to generate hash
+                const response = await fetch('https://generatehash-23bre25twa-uc.a.run.app/generateHash', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        txnid: txnid,
+                        amount: payUConfig.amount,
+                        productinfo: payUConfig.productinfo,
+                        firstname: payUConfig.firstname,
+                        email: payUConfig.email
+
+                    })
+                });
+
+                // Get the hash from the response
+                const result = await response.json();
+                if (result.hash && result.surl && result.furl && result.MERCHANT_KEY) {
+                    payUConfig['hash'] = result.hash;
+                    payUConfig['surl'] = result.surl;
+                    payUConfig['furl'] = result.furl;
+                    payUConfig['key'] = result.MERCHANT_KEY;
+                } else {
+                    alert("Error generating payment details");
+                    return;
+                }
+
+                // Prepare the form for PayU Hosted Checkout
+                var form = document.createElement('form');
+                form.action = "https://secure.payu.in/_payment";  // PayU's payment URL for testing
+                form.method = "POST";
+
+                // Append parameters to the form
+                for (const key in payUConfig) {
+                    var input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = key;
+                    input.value = payUConfig[key];
+                    form.appendChild(input);
+                }
+
+                // Submit the form to PayU
+                document.body.appendChild(form);
+                form.submit();
+            });
+        </script>
+
+        
+
+        <script>
+            function showModal(modalType) {
+                let modalId;
+
+                // Determine the modal ID based on the parameter
+                switch (modalType) {
+                    case 'terms':
+                        modalId = 'termsModal';
+                        break;
+                    case 'privacy':
+                        modalId = 'privacyModal';
+                        break;
+                    case 'refund':
+                        modalId = 'refundModal';
+                        break;
+                    case 'contact':
+                        modalId = 'contactModal';
+                        break;
+                    default:
+                        return; // If modal type is not recognized, do nothing
+                }
+
+                // Show the corresponding modal
+                const modal = new bootstrap.Modal(document.getElementById(modalId));
+                modal.show();
+            }
+        </script>
+
+        <script>
+            function changeImage(index) {
+                // Get the carousel instance
+                const carousel = new bootstrap.Carousel(document.getElementById('mainCarousel'));
+                // Move to the image based on the index
+                carousel.to(index);
+            }
+        </script>
+
+
+
+        <style>
+            .popup-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+            }
+
+            .popup-content {
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+                position: relative;
+            }
+
+            .qr-code {
+                margin: 20px 0;
+                width: 150px;
+                height: 150px;
+            }
+
+            .timer {
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+        </style>
+    </div>
+</body>
+
+
+
+</html>
