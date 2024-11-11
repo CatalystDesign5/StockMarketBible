@@ -28,3 +28,27 @@ exports.generateHash = functions.https.onRequest((req, res) => {
         res.status(200).json({ hash , surl, furl , MERCHANT_KEY});
     });
 });
+
+
+exports.payUWebhook = functions.https.onRequest((req, res) => {
+    cors(req, res, () => {
+        if (req.method !== 'POST') {
+            return res.status(405).send('Method Not Allowed');
+        }
+
+        const paymentData = req.body;
+
+        // Basic validation and processing of the payment data
+        if (paymentData.status === 'success') {
+            console.log("Payment was successful:", paymentData);
+            // Optional: Store success data in your database or trigger any further business logic
+            res.redirect("https://catalystdesign5.github.io/StockMarketBible/succes.html?status=success");
+        } else if (paymentData.status === 'failure') {
+            console.log("Payment failed:", paymentData);
+            // Optional: Log or handle failure case as needed
+            res.redirect("https://catalystdesign5.github.io/StockMarketBible/failure.html?status=failure");
+        }
+
+        res.sendStatus(200);  // Acknowledge receipt of the webhook
+    });
+});
