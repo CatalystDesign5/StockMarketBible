@@ -1,12 +1,12 @@
-:root{
-    --c-dark: #1f1f1f; /* Darker grey tone for text */
-    --c-brand: #5c5c5c; /* Darker grey for branding elements */
-    --c-service: #464646; /* Even darker grey for service hover effect */
+/* :root{
+    --c-dark: #1f1f1f; 
+    --c-brand: #5c5c5c; 
+    --c-service: #464646; 
 
-    --c-brand-light: #8c8c8c; /* Darker grey for hover states */
-    --c-brand-rgb: 92, 92, 92; /* Darker grey RGB for translucent elements */
+    --c-brand-light: #8c8c8c; 
+    --c-brand-rgb: 92, 92, 92; 
     --font-base: "ClashDisplay", sans-serif;
-    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1); 
     --transition: all 0.5s ease;
 }
 
@@ -25,10 +25,10 @@ body{
 }
 
 
-/* Adjustments for different screen sizes */
+
 @media (max-width: 768px) {
     .fixed-image-container {
-        position: relative; /* Allow normal scrolling behavior for mobile */
+        position: relative; 
         height: auto;
     }
 
@@ -70,11 +70,461 @@ body{
 }
 
 .fixed-footer {
+    
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #f1f1f1;
     text-align: center;
     padding: 10px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
+footer{
+    padding-top: 100px;
+}
+
+
+.footer-links {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    gap: 10px;                
+    flex-wrap: wrap;          
+}
+ */
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        .header h2 {
+            color: #ff8c00;
+            font-size: 2.5em;
+            margin: 10px 0;
+        }
+
+        .subheading {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .button {
+            padding: 15px 30px;
+            font-size: 1em;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .button.digital {
+            background-color: #ff5722;
+        }
+
+        .button.hardcopy {
+            background-color: #ff5722;
+        }
+
+        .button:hover {
+            opacity: 0.9;
+        }
+
+        .book-section {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .book {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        .book img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .book-title {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        .book-details {
+            font-size: 0.9em;
+            color: #cfcfcf;
+        }
+
+        .additional-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            margin-top: 20px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            font-weight: bold;
+            text-align: center;
+            /* Ensures text stays centered */
+            padding: 10px;
+        }
+
+        .normal-text {
+            font-weight: normal;
+            display: block;
+            /* Stacks text below numbers */
+            font-size: 1em;
+        }
+
+        .info-item strong {
+            display: block;
+            /* Ensures the number stays on top */
+            margin-bottom: 5px;
+            /* Adds space below the number */
+            color: #ff8c00;
+            font-size: 2.8em;
+            /* Slightly increase the number size */
+        }
+
+        .info-item span {
+            font-size: 1.2em;
+            /* Ensure the text is readable */
+        }
+
+
+
+
+        /* White section that starts after scrolling */
+
+        .white-section,
+        .grey-section {
+            width: 100%;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .white-section {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .white-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .white-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .f-o-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+            font-size: 1.2em;
+            color: #333;
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grey-section {
+            background-color: rgb(244, 244, 244);
+            color: #333333;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .grey-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .grey-section p {
+            font-size: 2em;
+        }
+
+        .text-content2 {
+            flex: 1;
+            font-size: 1.2em;
+            color: #333;
+            text-align: right;
+            margin-left: 20px;
+        }
+
+        .trader-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .trader-list li {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .trader-list li span {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .conclusion-box {
+            background-color: #fff4e6;
+            border: 2px dashed #ffa500;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 12px;
+        }
+
+        .conclusion-box h3 {
+            color: #ff7f00;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .conclusion-box p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .conclusion-features {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+        }
+
+        .feature {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .next-white-section {
+            background-color: white;
+            color: #333333;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .grey-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .white-smoke-section {
+            background-color: whitesmoke;
+            color: #333333;
+            padding: 50px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            max-width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h4 {
+            font-size: 1.1em;
+            color: #fff;
+            margin: 10px 0 0;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-content-1 {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-1 {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            /* Align links horizontally in the center */
+            align-items: center;
+            /* Vertically align them in the center */
+            gap: 10px;
+            /* Space between links */
+            flex-wrap: wrap;
+            /* Ensure links wrap to next line if necessary */
+        }
+
+
+
+
+        /* Mobile Styles */
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header h2 {
+                font-size: 1.8em;
+            }
+
+            .subheading {
+                font-size: 0.9em;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .button {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .book-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .book {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 20px;
+            }
+
+            .additional-info {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .info-item {
+                padding: 10px 0;
+                /* Remove excessive padding */
+                text-align: center;
+            }
+
+            .white-section,
+            .grey-section {
+                box-sizing: border-box;
+                padding: 30px;
+            }
+
+            .f-o-stats {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-content,
+            .image-content {
+                margin-bottom: 20px;
+            }
+
+            .text-content2 {
+                margin-bottom: 20px;
+            }
+
+            .conclusion-features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+
+
+
