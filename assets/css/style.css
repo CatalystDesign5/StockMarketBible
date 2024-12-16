@@ -277,7 +277,7 @@ footer{
 
         .text-content {
             flex: 1;
-            font-size: 1.0em;
+            font-size: 0.8em;
             color: #333;
             text-align: left;
             margin-right: 20px;
@@ -313,7 +313,7 @@ footer{
 
         .text-content2 {
             flex: 1;
-            font-size: 1.0em;
+            font-size: 0.8em;
             color: #333;
             text-align: left;
             margin-left: 20px;
