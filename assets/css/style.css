@@ -161,6 +161,8 @@ footer{
             gap: 20px;
             text-align: center;
             margin-bottom: 50px;
+            align-items: stretch;
+            
         }
 
         .book {
@@ -168,10 +170,15 @@ footer{
             padding: 20px;
             border-radius: 10px;
             width: 250px;
+            display: flex; /* Flexbox for equal height content alignment */
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .book img {
             width: 100%;
+            height: 200px; /* Set a consistent height for images */
+            object-fit: cover;
             border-radius: 10px;
         }
 
@@ -183,6 +190,7 @@ footer{
         .book-details {
             font-size: 0.9em;
             color: #cfcfcf;
+            margin-top: auto;
         }
 
         .additional-info {
